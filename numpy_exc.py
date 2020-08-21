@@ -25,7 +25,6 @@ even_arr = np.arange(10, 51, 2)
 # Create a 3x3 matrix with values ranging from 0 to 8
 
 matrix = np.arange(9).reshape(3,3)
-print(matrix)
 
 # Create a 3x3 identity matrix
 
