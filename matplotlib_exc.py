@@ -1,6 +1,5 @@
 import numpy as np
-import matplotlib as plt
-plt.show()
+import matplotlib.pyplot as plt
 
 x = np.arange(0,100)
 y = x*2
@@ -19,7 +18,7 @@ ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_title('title')
 
-fig1
+plt.show()
 
 # Exercise 2
 # Create a figure object and put two axes on it, ax1 and ax2. Located at [0,0,1,1] and [0.2,0.5,.2,.2] respectively.
@@ -35,7 +34,7 @@ ax22.plot(x, y)
 ax22.set_xlabel('x')
 ax22.set_ylabel('y')
 
-fig2
+plt.show()
 
 # Exercise 3
 # ** Create the plot below by adding two axes to a figure object at [0,0,1,1] and [0.2,0.5,.4,.4]**
@@ -55,7 +54,7 @@ ax32.set_title('zoom')
 ax32.set_xlim(20, 22)
 ax32.set_ylim(30, 50)
 
-fig3
+plt.show()
 
 # Exercise 4
 # ** Use plt.subplots(nrows=1, ncols=2) to create the plot below.**
@@ -63,13 +62,13 @@ fig3
 # ** See if you can resize the plot by adding the figsize() argument in plt.subplots() are copying and pasting your previous code. **
 
 fig4, axes = plt.subplots(nrows=1, ncols=2)
-axes[0].plot(x, y, color = 'green', lw = 15, ls = '**')
-axes[1].plot(x, z, color = 'blue', lw = 3, ls = 'steps')
+axes[0].plot(x, y, color = 'green', lw = 15, ls = '--')
+axes[1].plot(x, z, color = 'blue', lw = 3, ls = ':')
 
-fig4
+plt.show()
 
 fig4, axes = plt.subplots(nrows=1, ncols=2, figsize = (10, 2))
-axes[0].plot(x, y, color = 'green', lw = 15, ls = '**')
-axes[1].plot(x, z, color = 'blue', lw = 3, ls = 'steps')
+axes[0].plot(x, y, color = 'green', lw = 15, ls = '--')
+axes[1].plot(x, z, color = 'blue', lw = 3, ls = ':')
 
-fig4
+plt.show()
